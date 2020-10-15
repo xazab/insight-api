@@ -1,6 +1,6 @@
 {
   "name": "@xazab/insight-api",
-  "description": "A Dash blockchain REST and WebSocket API Service",
+  "description": "A Xazab blockchain REST and WebSocket API Service",
   "version": "3.0.0",
   "repository": "git://github.com/xazab/insight-api.git",
   "contributors": [
@@ -46,11 +46,11 @@
     "insight",
     "insight api",
     "blockchain",
-    "dash api",
+    "xazab api",
     "blockchain api",
     "json",
-    "bitcore-dash",
-    "dashcore"
+    "bitcore-xazab",
+    "xazabcore"
   ],
   "engines": {
     "node": ">=6"
@@ -61,10 +61,10 @@
   "main": "lib/index.js",
   "dependencies": {
     "async": "^2.6.2",
-    "@xazab/dashcore-lib": "^0.18.12",
+    "@xazab/xazabcore-lib": "^0.18.12",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
-    "lodash": "^4.17.11",
+    "loxazab": "^4.17.11",
     "lru-cache": "^5.1.1",
     "morgan": "^1.9.1",
     "request": "^2.88.0"

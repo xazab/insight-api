@@ -10,11 +10,11 @@ RUN apk add --update --no-cache \
 
 WORKDIR /insight
 
-# Copy dashcore-node
-RUN git clone --branch master --single-branch --depth 1 https://github.com/xazab/dashcore-node.git .
+# Copy xazabcore-node
+RUN git clone --branch master --single-branch --depth 1 https://github.com/xazab/xazabcore-node.git .
 
 # Copy config file
-COPY dashcore-node.json .
+COPY xazabcore-node.json .
 
 ARG VERSION
 
@@ -22,11 +22,11 @@ ARG VERSION
 RUN npm ci
 
 # Install Insight API module
-RUN bin/dashcore-node install @xazab/insight-api@${VERSION}
+RUN bin/xazabcore-node install @xazab/insight-api@${VERSION}
 
 FROM node:8-alpine
 
-LABEL maintainer="Dash Developers <dev@dash.org>"
+LABEL maintainer="Xazab Developers <dev@xazab.org>"
 LABEL description="Dockerised Insight API"
 
 WORKDIR /insight
@@ -36,4 +36,4 @@ COPY --from=0 /insight/ .
 
 EXPOSE 3001
 
-CMD ["bin/dashcore-node", "start"]
+CMD ["bin/xazabcore-node", "start"]

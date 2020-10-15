@@ -4,7 +4,7 @@
 [![NPM version](https://img.shields.io/npm/v/@xazab/insight-api.svg)](https://npmjs.org/package/@xazab/insight-api)
 [![API stability](https://img.shields.io/badge/stability-stable-green.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 
-> A Dash blockchain REST and WebSocket API Service
+> A Xazab blockchain REST and WebSocket API Service
 
 This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/xazab/insight-ui.
 
@@ -53,24 +53,24 @@ This is a backend-only service. If you're looking for the web frontend applicati
 ## Install
 
 ```bash
-npm install -g @xazab/dashcore-node
-dashcore-node create mynode
+npm install -g @xazab/xazabcore-node
+xazabcore-node create mynode
 cd mynode
-dashcore-node install @xazab/insight-api
-dashcore-node start  # to also start the service
+xazabcore-node install @xazab/insight-api
+xazabcore-node start  # to also start the service
 ```
 
 The API endpoints will be available by default at: `http://localhost:3001/insight-api/`
 
 ### Prerequisites
 
-- [Dashcore Node Dash 4.x](https://github.com/xazab/dashcore-node)
+- [Xazabcore Node Xazab 4.x](https://github.com/xazab/xazabcore-node)
 
-**Note:** You can use an existing Dash data directory, however `txindex`, `addressindex`, `timestampindex` and `spentindex` need to be enabled in `dash.conf`, as well as a few other additional fields.
+**Note:** You can use an existing Xazab data directory, however `txindex`, `addressindex`, `timestampindex` and `spentindex` need to be enabled in `xazab.conf`, as well as a few other additional fields.
 
 ### Query Rate Limit
 
-To protect the server, insight-api has a built-in query rate limiter. It can be configurable in `dashcore-node.json` with:
+To protect the server, insight-api has a built-in query rate limiter. It can be configurable in `xazabcore-node.json` with:
 
 ```json /*eslint-disable */
 
@@ -100,7 +100,7 @@ Or disabled entirely with:
 Follow the install instructions above, and ...
 
 ```bash
-dashcore-node start
+xazabcore-node start
 ```
 
 This will start the Insight-API listening on default port 3001.
@@ -516,7 +516,7 @@ Sample output:
       payment_amount: 5,
       start_epoch: 1482105600,
       type: 1,
-      url: 'https://www.dash.org'
+      url: 'https://www.xazab.org'
     },
     AbsoluteYesCount: 40,
     YesCount: 40,
@@ -571,7 +571,7 @@ Sample output:
           payment_amount: 5,
           start_epoch: 1482105600,
           type: 1,
-          url: 'https://www.dash.org'
+          url: 'https://www.xazab.org'
         },
         CreationTime: 1482223714,
         FundingResult: {
@@ -628,7 +628,7 @@ Sample output:
 
 ```
 {
-  "result":"[[\"proposal\",{\"end_epoch\":1519848619,\"name\":\"ghijklmnopqrstuvwxyz01234567891519097947\",\"payment_address\":\"yik5HAgVAgjH1oZKjcDfvcf22bwBNbSYzB\",\"payment_amount\":10,\"start_epoch\":1519097947,\"type\":1,\"url\":\"https://www.dashcentral.org/p/test_proposal_1519097947\"}]]",
+  "result":"[[\"proposal\",{\"end_epoch\":1519848619,\"name\":\"ghijklmnopqrstuvwxyz01234567891519097947\",\"payment_address\":\"yik5HAgVAgjH1oZKjcDfvcf22bwBNbSYzB\",\"payment_amount\":10,\"start_epoch\":1519097947,\"type\":1,\"url\":\"https://www.xazabcentral.org/p/test_proposal_1519097947\"}]]",
   "error":null,
   "id":78637
 }
@@ -647,7 +647,7 @@ Sample output:
 
 ```
 {
-  "result":"[[\"proposal\",{\"end_epoch\":1519848619,\"name\":\"ghijklmnopqrstuvwxyz01234567891519097947\",\"payment_address\":\"yik5HAgVAgjH1oZKjcDfvcf22bwBNbSYzB\",\"payment_amount\":10,\"start_epoch\":1519097947,\"type\":1,\"url\":\"https://www.dashcentral.org/p/test_proposal_1519097947\"}]]",
+  "result":"[[\"proposal\",{\"end_epoch\":1519848619,\"name\":\"ghijklmnopqrstuvwxyz01234567891519097947\",\"payment_address\":\"yik5HAgVAgjH1oZKjcDfvcf22bwBNbSYzB\",\"payment_amount\":10,\"start_epoch\":1519097947,\"type\":1,\"url\":\"https://www.xazabcentral.org/p/test_proposal_1519097947\"}]]",
   "error":null,
   "id":78637
 }
@@ -884,8 +884,8 @@ There are a few changes to the `GET` endpoint for `/addr/[:address]`:
 
 Some additional general notes:
 - The transaction history for an address will be sorted in block order
-- The response for the `/sync` endpoint does not include `startTs` and `endTs` as the sync is no longer relevant as indexes are built in dashd.
-- The endpoint for `/peer` is no longer relevant connection to dashd is via ZMQ.
+- The response for the `/sync` endpoint does not include `startTs` and `endTs` as the sync is no longer relevant as indexes are built in xazabd.
+- The endpoint for `/peer` is no longer relevant connection to xazabd is via ZMQ.
 - `/tx` endpoint results will now include block height, and spentTx related fields will be set to `null` if unspent.
 - `/block` endpoint results does not include `confirmations` and will include `poolInfo`.
 
@@ -904,7 +904,7 @@ The `/tx/<txid>` endpoint JSON response will not include the following fields on
 object.
 - `spentTs`
 
-The `/status?q=getTxOutSetInfo` method has also been removed due to the query being very slow and locking dashd.
+The `/status?q=getTxOutSetInfo` method has also been removed due to the query being very slow and locking xazabd.
 
 Plug-in support for Insight API is also no longer available, as well as the endpoints:
 - `/email/retrieve`
@@ -914,7 +914,7 @@ Caching support has not yet been added in the v0.3 upgrade.
 
 ## Resources
 
-- (Medium)[How to setup a Dash Instant-Send Transaction using Insight API - The comprehensive way](https://medium.com/@obusco/setup-instant-send-transaction-the-comprehensive-way-a80a8a0572e)
+- (Medium)[How to setup a Xazab Instant-Send Transaction using Insight API - The comprehensive way](https://medium.com/@obusco/setup-instant-send-transaction-the-comprehensive-way-a80a8a0572e)
 
 ## Contributing
 
@@ -922,4 +922,4 @@ Feel free to dive in! [Open an issue](https://github.com/xazab/insight-api/issue
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; Xazab Core Group, Inc.
