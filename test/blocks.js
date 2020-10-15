@@ -4,7 +4,7 @@ var should = require('should');
 var sinon = require('sinon');
 var BlockController = require('../lib/blocks');
 var xazabcore = require('@xazab/xazabcore-lib');
-var _ = require('loxazab');
+var _ = require('lodash');
 
 var blocks = require('./data/blocks.json');
 

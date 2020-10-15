@@ -2,7 +2,7 @@
 var sinon = require('sinon');
 var should = require('should');
 var AddressController = require('../lib/addresses');
-var _ = require('loxazab');
+var _ = require('lodash');
 var xazabcore = require('@xazab/xazabcore-lib');
 
 var txinfos = {
