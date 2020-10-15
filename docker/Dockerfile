@@ -11,7 +11,7 @@ RUN apk add --update --no-cache \
 WORKDIR /insight
 
 # Copy dashcore-node
-RUN git clone --branch master --single-branch --depth 1 https://github.com/dashevo/dashcore-node.git .
+RUN git clone --branch master --single-branch --depth 1 https://github.com/xazab/dashcore-node.git .
 
 # Copy config file
 COPY dashcore-node.json .
@@ -22,7 +22,7 @@ ARG VERSION
 RUN npm ci
 
 # Install Insight API module
-RUN bin/dashcore-node install @dashevo/insight-api@${VERSION}
+RUN bin/dashcore-node install @xazab/insight-api@${VERSION}
 
 FROM node:8-alpine
 

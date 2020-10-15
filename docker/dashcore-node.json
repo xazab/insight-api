@@ -4,7 +4,7 @@
   "services": [
     "dashd",
     "web",
-    "@dashevo/insight-api"
+    "@xazab/insight-api"
   ],
   "servicesConfig": {
     "dashd": {

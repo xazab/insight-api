@@ -1,12 +1,12 @@
 # Insight-API
 
-[![Build Status](https://img.shields.io/travis/dashevo/insight-api/master.svg?branch=master)](https://travis-ci.org/dashevo/insight-api)
-[![NPM version](https://img.shields.io/npm/v/@dashevo/insight-api.svg)](https://npmjs.org/package/@dashevo/insight-api)
+[![Build Status](https://img.shields.io/travis/xazab/insight-api/master.svg?branch=master)](https://travis-ci.org/xazab/insight-api)
+[![NPM version](https://img.shields.io/npm/v/@xazab/insight-api.svg)](https://npmjs.org/package/@xazab/insight-api)
 [![API stability](https://img.shields.io/badge/stability-stable-green.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 
 > A Dash blockchain REST and WebSocket API Service
 
-This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/dashevo/insight-ui.
+This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/xazab/insight-ui.
 
 ## Table of Content
 - [Install](#install)
@@ -53,10 +53,10 @@ This is a backend-only service. If you're looking for the web frontend applicati
 ## Install
 
 ```bash
-npm install -g @dashevo/dashcore-node
+npm install -g @xazab/dashcore-node
 dashcore-node create mynode
 cd mynode
-dashcore-node install @dashevo/insight-api
+dashcore-node install @xazab/insight-api
 dashcore-node start  # to also start the service
 ```
 
@@ -64,7 +64,7 @@ The API endpoints will be available by default at: `http://localhost:3001/insigh
 
 ### Prerequisites
 
-- [Dashcore Node Dash 4.x](https://github.com/dashevo/dashcore-node)
+- [Dashcore Node Dash 4.x](https://github.com/xazab/dashcore-node)
 
 **Note:** You can use an existing Dash data directory, however `txindex`, `addressindex`, `timestampindex` and `spentindex` need to be enabled in `dash.conf`, as well as a few other additional fields.
 
@@ -83,7 +83,7 @@ To protect the server, insight-api has a built-in query rate limiter. It can be 
 }
 ```
 
-With all the configuration options available: https://github.com/dashevo/insight-api/blob/master/lib/ratelimiter.js#L10-17
+With all the configuration options available: https://github.com/xazab/insight-api/blob/master/lib/ratelimiter.js#L10-17
 
 Or disabled entirely with:
 
@@ -918,7 +918,7 @@ Caching support has not yet been added in the v0.3 upgrade.
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/insight-api/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/xazab/insight-api/issues/new) or submit PRs.
 
 ## License
 
