@@ -1,7 +1,7 @@
 {
   "name": "@xazab/insight-api",
   "description": "A Xazab blockchain REST and WebSocket API Service",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "repository": "git://github.com/xazab/insight-api.git",
   "contributors": [
     {
@@ -61,7 +61,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "async": "^2.6.2",
-    "@xazab/xazabcore-lib": "^0.18.12",
+    "@xazab/xazabcore-lib": "^0.19.19",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "lodash": "^4.17.11",

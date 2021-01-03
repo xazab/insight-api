@@ -8,10 +8,10 @@
     ]
   },
   {
-    "poolName": "175btc",
-    "url": "http://www.175btc.com/",
+    "poolName": "www.0769.it",
+    "url": "https://www.0769.it/",
     "searchStrings": [
-      "Mined By 175btc.com"
+      "Mined By www.0769.it"
     ]
   },
   {
@@ -29,10 +29,10 @@
     ]
   },
   {
-    "poolName": "agentD",
-    "url": "http://",
+    "poolName": "pool.newcoinstomine.com",
+    "url": "https://pool.newcoinstomine.com/",
     "searchStrings": [
-      "agentD"
+      "Mined by newcoinstomine.com"
     ]
   },
   {
@@ -50,10 +50,10 @@
     ]
   },
   {
-    "poolName": "Bitparking",
-    "url": "http://bitparking.com/",
+    "poolName": "gpuhot.com",
+    "url": "https://gpuhot.com/",
     "searchStrings": [
-      "bitparking"
+      "Mined by GPU-HOT"
     ]
   },
   {
@@ -65,10 +65,10 @@
     ]
   },
   {
-    "poolName": "bcpool.io",
-    "url": "https://bcpool.io/",
+    "poolName": "mecrypto.club",
+    "url": "https://mecrypto.club/",
     "searchStrings": [
-      "bcpool"
+      "Mined by Mecrypto Club"
     ]
   },
   {
