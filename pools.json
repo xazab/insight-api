@@ -8,10 +8,10 @@
     ]
   },
   {
-    "poolName": "www.0769.it",
+    "poolName": "0769Pool",
     "url": "https://www.0769.it/",
     "searchStrings": [
-      "Mined By www.0769.it"
+      "0769Pool"
     ]
   },
   {
@@ -29,10 +29,10 @@
     ]
   },
   {
-    "poolName": "pool.newcoinstomine.com",
+    "poolName": "newcoinstomine.com - pool.newcoinstomine.com - Site",
     "url": "https://pool.newcoinstomine.com/",
     "searchStrings": [
-      "Mined by newcoinstomine.com"
+      "newcoinstomine.com - pool.newcoinstomine.com - Site"
     ]
   },
   {
@@ -50,10 +50,10 @@
     ]
   },
   {
-    "poolName": "gpuhot.com",
+    "poolName": "GpuHot.com altcoin",
     "url": "https://gpuhot.com/",
     "searchStrings": [
-      "Mined by GPU-HOT"
+      "GpuHot.com altcoin mining pool - gpuhot.com - Site"
     ]
   },
   {
