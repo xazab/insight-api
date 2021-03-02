@@ -1,7 +1,7 @@
 {
   "name": "@xazab/insight-api",
   "description": "A Xazab blockchain REST and WebSocket API Service",
-  "version": "3.1.0",
+  "version": "3.0.0",
   "repository": "git://github.com/xazab/insight-api.git",
   "contributors": [
     {
